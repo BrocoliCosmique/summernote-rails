@@ -6370,8 +6370,15 @@
       }
 
       $video.addClass('note-video-clip');
+      
+      //return $video[0];
+      var $embed;
+      var $embed = $('<div>').addClass('embed-responsive').addClass('embed-responsive-16by9');
 
-      return $video[0];
+      $video.addClass('embed-responsive-item');
+      $video.appendTo($embed);
+
+    return $embed[0];
     };
 
     this.show = function () {
