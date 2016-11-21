@@ -6378,7 +6378,7 @@
       $video.addClass('embed-responsive-item');
       $video.appendTo($embed);
 
-    return $embed[0];
+      return $embed[0];
     };
 
     this.show = function () {
