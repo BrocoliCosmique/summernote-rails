@@ -3138,7 +3138,7 @@
           deferred.reject($img);
         }).css({
           display: 'none'
-        }).appendTo(document.body).attr('data-original', url).attr('class', 'lazy');
+        }).appendTo(document.body).attr('src', url);
       }).promise();
     };
 
